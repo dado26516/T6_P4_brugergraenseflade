@@ -1,0 +1,32 @@
+/* Fjerne dumme brower indstillinger + at div's bliver større hvis man tilføjer borders og lignende */
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/* Farve nøgler, globale farver. Dette er smart fordi at vi ville kunne ændre hele hjemmesiden fra f.eks orange til blå bare ved at ændre disse værdier. */
+/* Bruges sådan her: background-color: var(--main-background-color); */
+:root {
+    --main-background-color: #000000;
+    --secoundary-background-color: #000000;
+    
+    --primary-color: #000000;
+    --secoundary-color: #000000;
+    --tertiary-color: #000000;
+    
+    --primary-text-color: #000000;
+    --secoundary-text-color: #000000;
+}
+
+/* Døde browsers kompatibilitet *host.. internet explore.. host..*  */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+
+/* Definere en standard bredde, ændres når vi kender designet */
+
+html, body {
+    width: 100%;
+    height: auto;
+}

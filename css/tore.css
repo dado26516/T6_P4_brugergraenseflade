@@ -1,0 +1,48 @@
+.class__example {
+    
+    /* tjek main.css for farvenøglerne, definere gerne manglende nøgler med beskrivende navne. */
+    /*=========================================================================================*/
+    
+    background-color: var(--main-background-color);
+    
+}
+
+
+/* nemmere css, brugt ude i virkeligheden. (For mere læs om BEM css på nettet) */
+/*=============================================================================*/
+
+.block {
+    width: 500px;
+    height: auto;
+}
+
+.block__element {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+
+.block__element--modifier {
+    width: 100%;
+    height: 200px;
+    background-color: red;
+}
+
+/* nemmere css, brugt ude i virkeligheden. Exemple 2 (For mere læs om BEM css på nettet) */
+/*=======================================================================================*/
+
+.form {
+    width: 500px;
+    height: auto;
+}
+
+.form__input.
+.form__input--disabled  {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+
+.form__input--disabled {
+    display: none;
+}
