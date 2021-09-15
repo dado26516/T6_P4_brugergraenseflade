@@ -1,0 +1,21 @@
+* {
+  border: 1px solid deeppink;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  width: 20%;
+  height: auto;
+}
+
+main {
+  width: 80%;
+  height: auto;
+}
