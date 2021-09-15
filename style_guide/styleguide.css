@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/segoe-ui-4');
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -49,4 +51,34 @@ h1 {
   font-size: 5vw;
   font-weight: bold;
   margin: 15px 0px;
+}
+
+.color-box-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+div.color-box {
+  height: 10vw;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-weight: bold;
+  margin: 0px 10px;
+}
+
+#midnightgreen {
+  background-color: #05454E;
+}
+
+#lightgreen {
+  background-color: #E5F1F0;
+  color: #000;
+}
+
+#lightred {
+  background-color: #F0C9C1;
+  color: #000;
 }
