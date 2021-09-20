@@ -7,6 +7,13 @@
   font-family: sans-serif;
 }
 
+code {
+  border: 2px solid #000;
+  background-color: #c9c6c5;
+  padding: 10px 0px;
+  margin: 30px 0px;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -31,18 +38,18 @@ ul {
 
 }
 
-ul li {
+li {
     margin: 20px 0px;
     list-style-type: none;
 }
 
-ul li a {
+a {
   color: #FFFFFF;
   text-decoration: none;
   transition: .2s;
 }
 
-ul li a:hover {
+a:hover {
   color: hotpink;
   font-size: 1.5vw;
 }
@@ -53,13 +60,17 @@ h1 {
   margin: 15px 0px;
 }
 
+h2 {
+  margin-top: 30px;
+}
+
 .color-box-flex {
   display: flex;
   flex-direction: row;
   margin: 30px 0px;
 }
 
-div.color-box {
+.color-box {
   height: 10vw;
   width: 10vw;
   display: flex;
@@ -85,11 +96,33 @@ div.color-box {
   color: #000;
 }
 
-div.button-box-flex {
+#yellow {
+  background-color: #FBE355;
+  color: #000;
+}
+
+#white {
+  background-color: #F8F9FA;
+  color: #000;
+  border: 3px solid #000;
+}
+
+.logo-img {
+  width: 6vw;
+  height:auto;
+}
+
+.logo-img-ylw {
+  background-color: #FBE355;
+  width: 6vw;
+  height:auto;
+}
+
+.button-box-flex {
   margin: 30px 0px;
 }
 
-div.inputs-box-flex {
+.inputs-box-flex {
   margin: 30px 0px;
 }
 
@@ -124,4 +157,3 @@ input::placeholder {
   position: absolute;
   top: 1vw;
 }
-
