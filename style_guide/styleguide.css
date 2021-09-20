@@ -136,6 +136,8 @@ h2 {
   background-color: #FBE355;
   width: 6vw;
   height:auto;
+  margin: 30px;
+  margin-bottom: 30px;
 }
 
 .button-box-flex {
@@ -189,4 +191,10 @@ input::placeholder {
   height:auto;
   margin: 30px;
   margin-bottom: 30px;
+}
+
+#lokale {
+appearance: none;
+  font-size: 30px;
+  padding: 10px;
 }
