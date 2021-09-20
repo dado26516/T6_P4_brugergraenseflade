@@ -214,3 +214,14 @@ appearance: none;
   margin-top: 20px;
   font-weight: regular;
 }
+
+#grafik {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.grafik {
+  width: 300px;
+  padding: 10px;
+}
