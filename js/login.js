@@ -7,5 +7,22 @@ function login() {
   let userName = document.getElementById('username').value;
   let passWord = document.getElementById('password').value;
 
-  document.getElementById('test').textContent = "virker"
+  if (userName == name[0] && passWord == "123") {
+    document.getElementById('test').textContent = "virker";
+  }
+  else if (userName == name[1] && passWord == "123") {
+    document.getElementById('test').textContent = "virker";
+  }
+  else if (userName == name[2] && passWord == "123") {
+    document.getElementById('test').textContent = "virker";
+  }
+  else if (userName == name[3] && passWord == "123") {
+    document.getElementById('test').textContent = "virker";
+  }
+  else if (userName == name[4] && passWord == "123") {
+    document.getElementById('test').textContent = "virker";
+  }
+  else {
+    alert("username or password is missing/wrong");
+  }
 }
