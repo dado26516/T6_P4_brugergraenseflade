@@ -10,10 +10,10 @@
 :root {
     --main-background-color: #ffffff;
     --secoundary-background-color: var(--primary-color);
-    --tertiary-background-color: #E5F1F0;
+    --tertiary-background-color: var(--secoundary-color);
     
     --primary-color: #05454E;
-    --secoundary-color: #000000;
+    --secoundary-color: #E5F1F0;
     --tertiary-color: #000000;
     
     --primary-text-color: #000000;
@@ -80,6 +80,7 @@ input {
 h1 {
     font-size: 36px;
     font-weight: bold;
+    line-height: 32px;
     color: #00454E;
 }
 
@@ -99,6 +100,51 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.overlay-dropdown__header h1 {
+    margin-left: 20px;
+}
+
+.overlay-dropdown__module {
+    padding: 0px 50px;
+}
+
+.dropdown__module--dropped {
+    
+}
+
+.dropdown__module--dropped input {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.dropdown__module--dropped ul {
+    width: 100%;
+    height: auto;
+    background-color: var(--main-background-color);
+    border: 3px solid var(--primary-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -3px;
+}
+
+.dropdown__module--dropped li {
+    width: 100%;
+    height: 65px;
+    border-bottom: 3px solid var(--secoundary-color);
+}
+
+.dropdown__module--dropped li a {
+    width: 100%;
+    height: 65px;
+    color: 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
 }
 
 footer {
