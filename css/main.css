@@ -9,9 +9,10 @@
 /* Bruges sådan her: background-color: var(--main-background-color); */
 :root {
     --main-background-color: #000000;
-    --secoundary-background-color: #000000;
+    --secoundary-background-color: var(--primary-color);
+    --tertiary-background-color: #E5F1F0;
     
-    --primary-color: #000000;
+    --primary-color: #05454E;
     --secoundary-color: #000000;
     --tertiary-color: #000000;
     
@@ -29,4 +30,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 html, body {
     width: 100%;
     height: auto;
+}
+
+input {
+    border: var(--primary-color) 5px solid;
+    background-color: var(--tertiary-background-color:);
 }
