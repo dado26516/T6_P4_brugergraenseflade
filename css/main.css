@@ -9,14 +9,15 @@
 /* Bruges sådan her: background-color: var(--main-background-color); */
 :root {
     --main-background-color: #000000;
-    --secoundary-background-color: #000000;
+    --secoundary-background-color: var(--primary-color);
+    --tertiary-background-color: #E5F1F0;
     
-    --primary-color: #000000;
+    --primary-color: #05454E;
     --secoundary-color: #000000;
     --tertiary-color: #000000;
     
     --primary-text-color: #000000;
-    --secoundary-text-color: #000000;
+    --secoundary-text-color: #ffffff;
 }
 
 /* Døde browsers kompatibilitet *host.. internet explore.. host..*  */
@@ -28,5 +29,118 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 html, body {
     width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    height: calc(100% - 76px);
+    padding: 28px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    height: 65px;
+    background-color: var(--tertiary-background-color);
+    border: var(--primary-color) 3px solid;
+    border-radius: 5px;
+    color: var(--primary-text-color);
+    padding: 15px;
+}
+
+::placeholder {
+    color: var(--primary-color);
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+nav {
+    width: 100%;
+    height: 76px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px -5px 50px 5px rgba(5,69,78,0.23); 
+    box-shadow: 0px -5px 50px 5px rgba(5,69,78,0.23);
+}
+
+ul {
+    height: 76px;
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    width: 50%;
+    height: 76px;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__icon,
+.profile__icon {
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/icons/home-unselected.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35px;
+}
+
+.profile__icon {
+    background-image: url(../img/icons/profile-unselected.svg);
+    background-size: 28px
+}
+
+.home.home--selected .home__icon,
+.home__icon:hover {
+    background-image: url(../img/icons/home-selected.svg);
+    background-size: 35px
+}
+.profile.profile--selected .profile__icon,
+.profile__icon:hover {
+    background-image: url(../img/icons/profile-selected.svg);
+}
+
+.find-mig {
+    width: 46px;
+    height: 62px;
+    color: var(--secoundary-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 28px;
+    bottom: 28px;
+    
+}
+
+.find-mig__icon {
+    width: 30px;
+    height: 41px;
+    background-image: url(../img/icons/find-me.svg);
+    background-repeat: no-repeat;
+;}
+
+
+.find-mig__text {
+    width: 47px;
     height: auto;
+    font-size: 12px;
+    margin-top: 5px;
 }
