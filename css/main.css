@@ -29,13 +29,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 html, body {
     width: 100%;
-    height: auto;
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
 }
 
 #wrapper {
     width: 100%;
-    height: auto;
+    height: calc(100% - 76px);
     padding: 28px;
+    position: relative;
 }
 
 input {
@@ -108,4 +113,34 @@ a {
 .profile.profile--selected .profile__icon,
 .profile__icon:hover {
     background-image: url(../img/icons/profile-selected.svg);
+}
+
+.find-mig {
+    width: 46px;
+    height: 62px;
+    color: var(--secoundary-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 28px;
+    bottom: 28px;
+    
+}
+
+.find-mig__icon {
+    width: 30px;
+    height: 41px;
+    background-image: url(../img/icons/find-me.svg);
+    background-repeat: no-repeat;
+;}
+
+
+.find-mig__text {
+    width: 47px;
+    height: auto;
+    font-size: 12px;
+    margin-top: 5px;
 }
