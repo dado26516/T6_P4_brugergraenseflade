@@ -33,7 +33,7 @@ html, body {
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #wrapper {
@@ -44,8 +44,19 @@ body {
 }
 
 
-button {
-    
+.button {
+    width: auto;
+    height: 90px;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--secoundary-text-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
 .back-button {
@@ -79,7 +90,7 @@ input {
 
 h1 {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 32px;
     color: #00454E;
 }
@@ -87,11 +98,16 @@ h1 {
 .overlay-dropdown {
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.95);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 999;
+}
+
+.overlay-dropdown .button {
+    margin: 0 50px;
+    margin-top: 50px;
 }
 
 .overlay-dropdown__header {
@@ -122,6 +138,7 @@ h1 {
 .dropdown__module--dropped ul {
     width: 100%;
     height: auto;
+    list-style-type: none;
     background-color: var(--main-background-color);
     border: 3px solid var(--primary-color);
     border-bottom-left-radius: 5px;
@@ -134,17 +151,30 @@ h1 {
 .dropdown__module--dropped li {
     width: 100%;
     height: 65px;
-    border-bottom: 3px solid var(--secoundary-color);
 }
+
+/*
+.dropdown__module--dropped li:nth-child(2n) {
+    width: 100%;
+    height: 65px;
+    background-color: #f4f8f8;
+}
+*/
 
 .dropdown__module--dropped li a {
     width: 100%;
     height: 65px;
-    color: 
+    color: var(--primary-text-color);
+    border-bottom: 3px solid var(--secoundary-color);
+    text-decoration: none;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 15px;
+}
+
+.dropdown__module--dropped li a:hover {
+    background-color: #f4f8f8;
 }
 
 footer {
@@ -161,18 +191,18 @@ nav {
     box-shadow: 0px -5px 50px 5px rgba(5,69,78,0.23);
 }
 
-ul {
+footer nav ul {
     height: 76px;
     list-style-type: none;
     display: flex;
 }
 
-li {
+footer nav li {
     width: 50%;
     height: 76px;
 }
 
-a {
+footer nav a {
     width: 100%;
     height: 100%;
     display: flex;
