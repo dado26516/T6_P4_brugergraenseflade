@@ -1,4 +1,5 @@
-console.log("js virker")
+//Login module
+//console.log("js virker")
 
 let name = ["Danni", "Tore", "Hedinn", "Simon", "Arton"];
 let passWord = "123";
