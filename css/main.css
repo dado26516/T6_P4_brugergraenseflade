@@ -134,7 +134,7 @@ h1 {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
-
+.overlay-dropdown__module ul,
 .dropdown__module--dropped ul {
     width: 100%;
     height: auto;
@@ -143,7 +143,7 @@ h1 {
     border: 3px solid var(--primary-color);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    display: flex;
+    display: none;
     flex-direction: column;
     margin-top: -3px;
 }
