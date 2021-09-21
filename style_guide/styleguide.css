@@ -267,6 +267,7 @@ appearance: none;
 .navigation li {
   padding: 10px;
   width: 100%;
+  transition: .2s;
 }
 
 .navigation li:hover {
