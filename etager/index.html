@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!--Nem og hurtig måde at lave SEO optimerede sider på, mappen denne index.html side ligger i skal gerne hede noget forklarende såsom ( "side-1" < "om-os" )-->
-<!--Vi vil også bruge simpelt php til at sørge for at ikke at f.eks skulle skrive alt meta data på alle undersiderne igen og igen ---------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Super cool awesome team6</title>
     <meta name="author" content="Team6"/>
+    
+<!--    Undersider google ikke skal følge, udkommentere det-->
 <!--
     <meta name="robots" content="noindex">
     <meta name="robots" content="noindex,nofollow">
@@ -38,12 +35,13 @@
     <!-- Alle css & js filerne, vil til sidst blive slået sammen. Dette er for at gøre det nemmere, så alle kan arbejde på css & js -->
     <!---------------------------------------------------------------------------------------------------------------------->
     
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
-    <link href="/css/arton.css" rel="stylesheet" type="text/css">
-    <link href="/css/danni.css" rel="stylesheet" type="text/css">
-    <link href="/css/hedinn.css" rel="stylesheet" type="text/css">
-    <link href="/css/simon.css" rel="stylesheet" type="text/css">
-    <link href="/css/tore.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/arton.css" rel="stylesheet" type="text/css">
+    <link href="css/danni.css" rel="stylesheet" type="text/css">
+    <link href="css/hedinn.css" rel="stylesheet" type="text/css">
+    <link href="css/simon.css" rel="stylesheet" type="text/css">
+    <link href="css/tore.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
 
     <script type="module" src="js/main.js" defer></script>
     <script type="module" src="js/arton.js" defer></script>
@@ -53,8 +51,35 @@
     <script type="module" src="js/tore.js" defer></script>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div id="wrapper">
+        <header>
+            <input type="text" placeholder="Søg..">
+        </header>
+        
+        <main>
+            
+        </main>
+        
+        <a href="" class="find-mig">
+            <div class="find-mig__icon"></div>
+            <div class="find-mig__text">Find mig</div>
+        </a>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a class="home home--selected" href="/">
+                        <div class="home__icon"></div>
+                    </a>
+                </li>
+                <li>
+                    <a class="profile" href="">
+                        <div class="profile__icon"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
