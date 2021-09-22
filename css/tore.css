@@ -1,54 +1,33 @@
-.class__example {
-    
-    /* tjek main.css for farvenøglerne, definere gerne manglende nøgler med beskrivende navne. */
-    /*=========================================================================================*/
-    
-    background-color: var(--main-background-color);
-    
+.background {
+  background-image: url("../style_guide/images/loading-screen-background.png");
+  height: 100vh;
+  width: auto;
+  border: 1px solid red;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-/* nemmere css, brugt ude i virkeligheden. (For mere læs om BEM css på nettet) */
-/*=============================================================================*/
-
-.block {
-    width: 500px;
-    height: auto;
+.logo {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.block__element {
-    width: 100%;
-    height: 200px;
-    background-color: white;
+.logo__icon {
+
 }
 
-.block__element--modifier {
-    width: 100%;
-    height: 200px;
-    background-color: red;
+.logo__text {
+ 
 }
 
-/* nemmere css, brugt ude i virkeligheden. Exemple 2 (For mere læs om BEM css på nettet) */
-/* Tjek også HTML for opsættelsen. */
-/*=======================================================================================*/
-
-/*
-.button {
-    width: 300px;
-    height: 60px;
-    background-color: white;
-    display: block;
-    padding: 20px;
+.circle-logo {
+  width: 600px;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
-
-.button__price  {
-    font-size: 12px;
-}
-
-.button__text  {
-    font-size: 14px;
-}
-
-.button--orange {
-    background-color: orange;
-}*/
