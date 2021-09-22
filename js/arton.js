@@ -12,8 +12,8 @@ mainInput.addEventListener('input', function(e) {
     
     let mainInputValue = mainInput.value;
     
-    let test = mainInputValue.startsWith("F");
-    console.log(test);
+//    let test = mainInputValue.startsWith("F");
+//    console.log(test);
     
     
     if(mainInputValue.startsWith("F")) {
