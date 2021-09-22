@@ -44,7 +44,8 @@ body {
 }
 
 
-.button {
+.button,
+button {
     width: auto;
     height: 90px;
     font-size: 30px;
