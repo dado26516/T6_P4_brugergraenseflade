@@ -104,6 +104,10 @@ h1 {
     color: #00454E;
 }
 
+/*==========================================================*/
+/************************DROPDOWN****************************/
+/*==========================================================*/
+
 .overlay-dropdown {
     width: 100%;
     height: 100%;
@@ -136,9 +140,9 @@ h1 {
     padding: 0px 50px;
 }
 
-.dropdown__module--dropped {
+/* .dropdown__module--dropped {
 
-}
+} */
 
 .dropdown__module--dropped input {
     border-bottom-left-radius: 0px;
@@ -163,14 +167,6 @@ h1 {
     height: 65px;
 }
 
-/*
-.dropdown__module--dropped li:nth-child(2n) {
-    width: 100%;
-    height: 65px;
-    background-color: #f4f8f8;
-}
-*/
-
 .dropdown__module--dropped li a {
     width: 100%;
     height: 65px;
@@ -186,6 +182,10 @@ h1 {
 .dropdown__module--dropped li a:hover {
     background-color: #f4f8f8;
 }
+
+/*==========================================================*/
+/**************************MENU******************************/
+/*==========================================================*/
 
 footer {
     width: 100%;
@@ -245,6 +245,10 @@ footer nav a {
     background-image: url(../img/icons/profile-selected.svg);
 }
 
+/*==========================================================*/
+/***********************FIND-MIG*****************************/
+/*==========================================================*/
+
 .find-mig {
     width: 46px;
     height: 62px;
@@ -275,3 +279,40 @@ footer nav a {
     color: var(--primary-color);
     margin-top: 5px;
 }
+
+/*==========================================================*/
+/**********************LOADING-PAGE**************************/
+/*==========================================================*/
+
+.background {
+    width: auto;
+    height: 100vh;
+    background-image: url("../style_guide/images/loading-screen-background.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .logo {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* .logo__icon {
+  
+  }
+  
+  .logo__text {
+   
+  } */
+  
+  .circle-logo {
+    width: 800px;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
