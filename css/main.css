@@ -45,9 +45,14 @@ body {
     position: relative;
 }
 
+#no-100-height {
+    height: auto;
+}
+
 #no-100-height #wrapper {
     height: auto;
-    padding-bottom: 60px;
+    padding-top: 0px;
+    padding-bottom: 76px;
 }
 
 /*==========================================================*/
@@ -416,15 +421,15 @@ footer nav a {
 /*************************PROFILE****************************/
 /*==========================================================*/
 
-#profile {
-    padding: 50px 0px;
+.profile-page main {
+    padding: 28px 0px;
 }
 
-#profile h2 {
+.profile-page h2 {
     margin-bottom: 10px;
 }
 
-#profile .trash-icon {
+.profile-page .trash-icon {
     margin-left: 20px;
 }
 
@@ -432,7 +437,7 @@ footer nav a {
 /***************************LOGIN****************************/
 /*==========================================================*/
 
-#login main {
+.login-page main {
     width: 100%;
     height: calc(100% - 44px);
     display: flex;
@@ -440,18 +445,19 @@ footer nav a {
     justify-content: center;
 }
 
-#login .login-form {
+.login-page .login-form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 50px;
 }
 
-.wayf-logo {
+.login-page .wayf-logo {
     width: 115px;
     height: 30px;
     margin-bottom: 25px;
 }
 
-#username {
+.login-page #username {
     margin-bottom: 15px;
 }
