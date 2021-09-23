@@ -113,6 +113,7 @@ button:hover,
     width: 15px;
     height: 15px;
     background-color: var(--primary-color);
+    cursor: pointer;
 }
 
 input {
