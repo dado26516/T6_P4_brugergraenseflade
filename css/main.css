@@ -160,6 +160,9 @@ header,
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header--minustop28 {
     margin-top: -28px;
 }
 
