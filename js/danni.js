@@ -9,19 +9,19 @@ function login() {
   let passWord = document.getElementById('password').value;
 
   if (userName == name[0] && passWord == "123") {
-    document.getElementById('test').textContent = "virker";
+    window.location.href = "../profil/index.html";
   }
   else if (userName == name[1] && passWord == "123") {
-    document.getElementById('test').textContent = "virker";
+    window.location.href = "../profil/index.html";
   }
   else if (userName == name[2] && passWord == "123") {
-    document.getElementById('test').textContent = "virker";
+    window.location.href = "../profil/index.html";
   }
   else if (userName == name[3] && passWord == "123") {
-    document.getElementById('test').textContent = "virker";
+    window.location.href = "../profil/index.html";
   }
   else if (userName == name[4] && passWord == "123") {
-    document.getElementById('test').textContent = "virker";
+    window.location.href = "../profil/index.html";
   }
   else {
     alert("username or password is missing/wrong");
