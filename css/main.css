@@ -31,7 +31,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 html, body {
     width: 100%;
-    height: calc(100% - 76px);
+    height: calc(100% - 38px);
 }
 
 body {
@@ -40,7 +40,7 @@ body {
 
 #wrapper {
     width: 100%;
-    height: calc(100% - 76px);
+    height: 100%;
     padding: 28px;
     position: relative;
 }
@@ -433,32 +433,25 @@ footer nav a {
 /*==========================================================*/
 
 #login main {
-    height: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
-.wayf-logo {
-    width: 115px;
-    height: 30px;
-}
-
-
-/* .login-flex {
+    width: 100%;
+    height: calc(100% - 44px);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.login-header {
-    font-size: 36px;
-    color: var(--primary-color);
+#login .login-form {
     display: flex;
-    justify-content: center;
-    margin-bottom: 145px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wayf-logo {
+    width: 115px;
+    height: 30px;
+    margin-bottom: 25px;
 }
 
 #username {
     margin-bottom: 15px;
-} */
+}
