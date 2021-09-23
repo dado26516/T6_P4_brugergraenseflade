@@ -7,6 +7,7 @@ let name = ["Danni", "Tore", "Hedinn", "Simon", "Arton"];
 function login() {
   let userName = document.getElementById('username').value;
   let passWord = document.getElementById('password').value;
+  let errorMessage = document.getElementById("error-message");
 
   if (userName == name[0] && passWord == "123") {
     window.location.href = "../profil/index.html";
@@ -24,6 +25,7 @@ function login() {
     window.location.href = "../profil/index.html";
   }
   else {
-    alert("username or password is missing/wrong");
+    errorMessage.style.visibility = "visible";
+    //errorMessage.textContent = "Forkert brugernavn eller adgangskode";
   }
 }
