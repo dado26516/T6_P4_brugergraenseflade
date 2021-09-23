@@ -17,7 +17,8 @@
     --tertiary-color: #000000;
 
     --primary-text-color: #000000;
-    --secoundary-text-color: #ffffff;
+    --secoundary-text-color: #ABD5DA;
+    --header-title-text-color: var(--primary-color);
 }
 
 /* Døde browsers kompatibilitet *host.. internet explore.. host..*  */
@@ -72,7 +73,7 @@ button {
 
 button:hover,
 .button:hover {
-    background-color: #043036;
+    background-color: #042D33;
 }
 
 .back-button {
@@ -83,6 +84,12 @@ button:hover,
     background-position: center;
     border: 3px solid var(--primary-color);
     border-radius: 100px;
+}
+
+.button-small {
+    width: auto;
+    height: 44px;
+    font-size: 18px;
 }
 
 .back-button:hover {
@@ -109,6 +116,18 @@ h1 {
     font-weight: 700;
     line-height: 32px;
     color: #00454E;
+}
+
+header,
+.header {
+    width: 100%;
+}
+
+.header--center {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*==========================================================*/
