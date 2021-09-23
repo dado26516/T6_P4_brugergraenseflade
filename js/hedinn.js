@@ -1,6 +1,10 @@
-function removeFavorite(){
-let remove = document.getElementById('card1').style.display;
-remove = "none";
+function removeFavorite() {
+    document.getElementById('card1').style.display = "none";
 }
 
-console.log("fart")
+function removeFavorite1() {
+    document.getElementById('card2').style.display = "none";
+}
+
+
+
