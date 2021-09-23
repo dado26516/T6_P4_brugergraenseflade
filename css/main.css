@@ -31,7 +31,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 html, body {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 76px);
 }
 
 body {
@@ -45,6 +45,10 @@ body {
     position: relative;
 }
 
+#no-100-height #wrapper {
+    height: auto;
+    padding-bottom: 60px;
+}
 
 /*==========================================================*/
 /************************GENERAL*****************************/
@@ -151,6 +155,7 @@ header,
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -28px;
 }
 
 .container {
@@ -185,7 +190,7 @@ header,
 }
 
 .card__text__title {
-    line-height: 18px;
+    line-height: 26px;
 }
 
 .card__buttons {
@@ -412,7 +417,7 @@ footer nav a {
 /*==========================================================*/
 
 #profile {
-    padding: 50px;
+    padding: 50px 0px;
 }
 
 #profile h2 {
@@ -422,3 +427,38 @@ footer nav a {
 #profile .trash-icon {
     margin-left: 20px;
 }
+
+/*==========================================================*/
+/***************************LOGIN****************************/
+/*==========================================================*/
+
+#login main {
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.wayf-logo {
+    width: 115px;
+    height: 30px;
+}
+
+
+/* .login-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-header {
+    font-size: 36px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 145px;
+}
+
+#username {
+    margin-bottom: 15px;
+} */

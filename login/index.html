@@ -38,50 +38,35 @@
     <!-- Alle css & js filerne, vil til sidst blive slået sammen. Dette er for at gøre det nemmere, så alle kan arbejde på css & js -->
     <!---------------------------------------------------------------------------------------------------------------------->
 
-    <link href="../css/arton.css" rel="stylesheet" type="text/css">
-    <link href="../css/danni.css" rel="stylesheet" type="text/css">
-    <link href="../css/hedinn.css" rel="stylesheet" type="text/css">
-    <link href="../css/simon.css" rel="stylesheet" type="text/css">
-    <link href="../css/tore.css" rel="stylesheet" type="text/css">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
 
-  <!--  <script type="module" src="js/main.js" defer></script>
-    <script type="module" src="js/arton.js" defer></script> -->
+  <!--  <script type="module" src="js/main.js" defer></script> -->
     <script src="../js/danni.js" defer></script>
-    <!--<script type="module" src="js/hedinn.js" defer></script>
-    <script type="module" src="js/simon.js" defer></script>
-    <script type="module" src="js/tore.js" defer></script> -->
 </head>
-<body>
-    
+<body id="login">
+    <div id="wrapper">
+    <header class="header header--center">
+        <h1>Min profil</h1>
+    </header>
     <main>
-        <div id="wrapper">
-            <header>
-              <!--  <input type="text" placeholder="Søg.."> -->
-            </header>
-            <main>
-                <div class="login-flex">
-                    <h2 class="login-header">Login</h2>
-                    <img class="wayf-logo" src="../style_guide/images/g12.png" alt="wayf logo"> 
-                    <input id="username" type="text" name="username" placeholder="username">
-                    <input id="password" type="password" name="password" placeholder="password">
-                    <button type="button" name="button" onclick="login()">Login</button>
-                </div>
-            </main>
-        </div>
-
+        <form class="login-form" action="">
+            <img class="wayf-logo" src="../style_guide/images/g12.png" alt="wayf logo">
+            <input id="username" type="text" name="username" placeholder="username">
+            <input id="password" type="password" name="password" placeholder="password">
+            <button type="button" name="button" onclick="login()">Login</button>
+        </form>
     </main>
-    
+    </div>
     <footer>
         <nav>
             <ul>
                 <li>
-                    <a class="home home--selected" href="/">
+                    <a class="home" href="/">
                         <div class="home__icon"></div>
                     </a>
                 </li>
                 <li>
-                    <a class="profile" href="">
+                    <a class="profile profile--selected" href="/login/">
                         <div class="profile__icon"></div>
                     </a>
                 </li>
