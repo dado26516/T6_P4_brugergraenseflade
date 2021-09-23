@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Super cool awesome team6</title>
     <meta name="author" content="Team6"/>
-    
+
 <!--    Undersider google ikke skal følge, udkommentere det-->
 <!--
     <meta name="robots" content="noindex">
@@ -12,14 +12,14 @@
 -->
     <meta name="description" CONTENT="Team6 er cool">
     <meta name="keywords" content="team6, team, 6"/>
-    
+
     <!-- Facebook osv -->
     <!------------------>
     <meta name="og:type" content="website">
     <meta name="og:image" property="og:image" content=">">
     <meta name="og:title" property="og:title" content="">
     <meta name="og:description" property="og:description" content="">
-    
+
 
     <!-- Twitter osv -->
     <!----------------->
@@ -27,14 +27,14 @@
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
 <!--    <meta name="og:url" content="">-->
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000">
     <link rel="shortcut icon" href="img/favicon.ico">
-    
+
     <!-- Alle css & js filerne, vil til sidst blive slået sammen. Dette er for at gøre det nemmere, så alle kan arbejde på css & js -->
     <!---------------------------------------------------------------------------------------------------------------------->
-    
+
     <link href="../css/arton.css" rel="stylesheet" type="text/css">
     <link href="../css/danni.css" rel="stylesheet" type="text/css">
     <link href="../css/hedinn.css" rel="stylesheet" type="text/css">
@@ -46,12 +46,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <script type="module" src="../js/arton.js" defer></script>
-    <script type="module" src="../js/danni.js" defer></script>
+
+
     <script type="module" src="../js/hedinn.js" defer></script>
-    <script type="module" src="../js/simon.js" defer></script>
-    <script type="module" src="../js/tore.js" defer></script>
-    <script type="module" src="../js/main.js" defer></script>
+
+
+    <!--   <script type="module" src="../js/arton.js" defer></script>
+      <script type="module" src="../js/danni.js" defer></script>
+      <script type="module" src="../js/hedinn.js" defer></script>
+      <script type="module" src="../js/simon.js" defer></script>
+      <script type="module" src="../js/tore.js" defer></script>
+      <script type="module" src="../js/main.js" defer></script>                              -->
+
 </head>
 <body id="no-100-height" class="profile-page">
     <div id="wrapper">
@@ -79,17 +85,17 @@
 
             <section class="container">
                 <h2>Dine bookmarks</h2>
-                <article class="card">
+                <article class="card" id="card1">
                     <div class="card__text">
                         <h3 class="card__text__title">Fablab</h3>
                         <p class="card__text__time">Kl. 12:30 Til 15:00</p>
                     </div>
                     <div class="card__buttons">
                         <a class="button button--small" href="">Find</a>
-                        <div class="trash-icon"></div>
+                        <div class="trash-icon" onclick="removeFavorite()"></div>
                     </div>
                 </article>
-                <article class="card">
+                <article class="card" id="card2">
                     <div class="card__text">
                         <h3 class="card__text__title">Science lab of the day</h3>
                         <p class="card__text__time">Kl. 12:30 Til 15:000</p>
