@@ -17,7 +17,8 @@
     --tertiary-color: #000000;
 
     --primary-text-color: #000000;
-    --secoundary-text-color: #ABD5DA;
+    --secoundary-text-color: #ffffff;
+    --tertiary-text-color: #ABD5DA;
     --header-title-text-color: var(--primary-color);
 }
 
@@ -76,6 +77,14 @@ button:hover,
     background-color: #042D33;
 }
 
+.button--small {
+    width: auto;
+    height: 44px;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0 18px;
+}
+
 .back-button {
     width: 40px;
     height: 40px;
@@ -86,15 +95,15 @@ button:hover,
     border-radius: 100px;
 }
 
-.button-small {
-    width: auto;
-    height: 44px;
-    font-size: 18px;
-}
-
 .back-button:hover {
     background-color: var(--primary-color);
     background-image: url(../img/icons/back-button-white.svg);
+}
+
+.trash-icon {
+    width: 15px;
+    height: 15px;
+    background-color: var(--primary-color);
 }
 
 input {
@@ -161,12 +170,27 @@ header,
     background-color: var(-main-background-color);
     border: 3px solid #ECECEC;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 10px;
     padding: 20px;
 }
 
 .container .card:last-child {
     margin-bottom: 0px;
+}
+
+.card__text__title {
+    margin-bottom: 5px;
+}
+
+.card__text__title {
+    line-height: 18px;
+}
+
+.card__buttons {
+    display: flex;
+    align-items: center;
 }
 
 /*==========================================================*/
