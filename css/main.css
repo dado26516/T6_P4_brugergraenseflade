@@ -115,7 +115,21 @@ h1 {
     font-size: 36px;
     font-weight: 700;
     line-height: 32px;
-    color: #00454E;
+    color: var(--header-title-text-color);
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color: var(--header-title-text-color);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--primary-text-color);
 }
 
 header,
@@ -128,6 +142,31 @@ header,
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.container:last-child {
+    margin-bottom: 0px;
+}
+
+.container .card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: var(-main-background-color);
+    border: 3px solid #ECECEC;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.container .card:last-child {
+    margin-bottom: 0px;
 }
 
 /*==========================================================*/
@@ -343,3 +382,15 @@ footer nav a {
     right: 0px;
     left: auto;
   }
+
+/*==========================================================*/
+/*************************PROFILE****************************/
+/*==========================================================*/
+
+#profile {
+    padding: 50px;
+}
+
+#profile h2 {
+    margin-bottom: 10px;
+}
