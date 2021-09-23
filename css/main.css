@@ -18,7 +18,7 @@
 
     --primary-text-color: #000000;
     --secoundary-text-color: #ABD5DA;
-    --header-text-color: var(--primary-color);
+    --header-title-text-color: var(--primary-color);
 }
 
 /* Døde browsers kompatibilitet *host.. internet explore.. host..*  */
