@@ -129,7 +129,7 @@ h1 {
 
 h2 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 16px;
     color: var(--header-title-text-color);
 }
@@ -417,4 +417,8 @@ footer nav a {
 
 #profile h2 {
     margin-bottom: 10px;
+}
+
+#profile .trash-icon {
+    margin-left: 20px;
 }
