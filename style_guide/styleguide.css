@@ -12,6 +12,7 @@ code {
   background-color: #c9c6c5;
   padding: 10px;
   margin: 30px 0px;
+  text-decoration: none;
 }
 
 .container {
@@ -22,9 +23,9 @@ code {
 aside {
   width: 20%;
   height: auto;
-  background: rgb(39, 39, 39);
-  border-right: 5px solid hotpink;
-  border-bottom: 5px solid hotpink;
+  background: #E5F1F0;
+  border-right: 5px solid #042D33;
+  border-bottom: 5px solid #042D33;
 }
 
 main {
@@ -46,13 +47,13 @@ main {
 }
 
 a {
-  color: #FFFFFF;
+  color: #042D33;
   text-decoration: none;
   transition: .2s;
 }
 
 a:hover {
-  color: hotpink;
+  color: #05454E;
   font-size: 1.5vw;
 }
 
@@ -244,6 +245,12 @@ appearance: none;
 .grafik {
   width: 300px;
   padding: 10px;
+}
+
+.grafiktekst{
+  display: block;
+  
+
 }
 
 /* NAVIGATION */

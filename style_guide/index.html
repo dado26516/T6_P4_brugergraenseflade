@@ -60,10 +60,40 @@
             <p>#81B8BF</p>
           </div>
         </div>
+        <code>
+          :root {
+            <br>
+            <br>
+            --main-background-color: #ffffff;<br><br>
+            --secoundary-background-color: var(--primary-color); <br><br>
+            --tertiary-background-color: var(--secoundary-color); <br><br>
+        <br>
+            --primary-color: #05454E; <br><br>
+            --secoundary-color: #E5F1F0; <br><br>
+            --tertiary-color: #000000; <br><br>
+        <br>
+            --primary-text-color: #000000;<br><br>
+            --secoundary-text-color: #ffffff;<br><br>
+            --tertiary-text-color: #ABD5DA;<br><br>
+            --header-title-text-color: var(--primary-color);<br><br><br>
+        } <br>
+        </code>
+        <br>
+        <p>
+          <br>#05454E bruges til knapper og andet vigtigt grafik
+          <br> Den gule farve bruges til baggrund til UCL logo samt til vores marker ikon
+          <br> Den lyseblå farve bruges til baggrund af loading screen
+          <br> Den hvide bruges som primær baggrund
+          <br> De grå farver bruges til sekunder tekst
+
+        </p>
+
       </section>
       <br>
       <hr>
       <br>
+
+
       <!-- GRAFIK -->
       <h2>GRAFIK</h2>
       <section id="grafik">
@@ -71,8 +101,17 @@
         <img class="grafik" src="images/stuetage1.png" alt="bygning">
         <img class="grafik" src="images/etager_ikon.png" alt="bygning">
         <img class="grafik" src="images/lokale.png" alt="bygning">
-        <code>&lt;img class="grafik" src="images/ucl_bygning_002.png" alt="bygning"&gt;</code>
-      </section>
+        
+        </section>
+        <code>&lt;img class="grafik" src="images/ucl_bygning_002.png" alt="bygning"&gt;
+        </code>
+        <br>
+        <div class="grafiktekst">
+          <p>
+          <br> Disse grafiske elementer bruges i forskellige dele af vores app, f.eks. vores kort.
+          </p>
+        </div>
+
       <br>
       <br>
       <hr>
@@ -88,10 +127,19 @@
         <code>
           &lt;img class="logo-img" src="images/ucl-logo.png" alt="UCL logo" &gt;
         </code>
+        <br>
+        <br>
+        <p>
+         Vi bruger UCL logo gul som vores primære logo
+          <br>
+        Vi bruger wayf logoet til vores loginside
+        </p>
       </section>
       <br>
       <br>
       <hr>
+
+
       <!-- KNAPPER -->
       <section id="knapper">
         <h2>KNAPPER</h2>
@@ -103,9 +151,17 @@
         <code>
           &lt;button type="button" name="button"&gt;Søg&lt;/code&gt;
         </code>
+        <br>
+        <br>
+        <p>
+          Den store knap er primær knap til søg/login/logud
+        <br> Den lille bruges til popup route knappen samt til profilsiden
+        </p>
       </section>
       <br>
       <br>
+      
+      
       <!-- TYPOGRAFI -->
       <hr>
       <section id="typografi">
@@ -116,18 +172,31 @@
         <code>
           &lt;h1 class="font">Segoe UI - Bold 36px - h1&lt;/h1&gt;
         </code>
+        <br>
+        <br>
+        <p>
+          Bruges som overskrift.
+        </p>
         <h2 class="underrubrik">Segoe UI - 24 semibold - Menutekst</h2>
         <br>
         <code>
           &lt;h2 class="underrubrik">Segoe UI - 24 semibold - Menutekst&lt;/h2&gt;
         </code>
+        <br>
+        <br>
+        <p>
+          bruges som menutekst
+        </p>
         <p class="brodtekst">Segoe UI - 14 regular - Tid</p>
         <br>
-        <code>
-          &lt;p class="brodtekst">Segoe UI - 14 regular - Tid&lt;/p&gt;
-        </code>
       </section>
-
+      <code>
+        &lt;p class="brodtekst">Segoe UI - 14 regular - Tid&lt;/p&gt;
+      </code>
+      <br><br>
+      <p>
+        bruges som brødtekst
+      </p>
       <br>
       <br>
       <hr>
@@ -143,23 +212,33 @@
           &lt;input class="search-bar" type="text" placeholder="Søg..."&gt;
         &lt;/div&gt;
         </code>
+        <br><br><br>
+        <p>
+          Bruges til login og søgefelt
+        </p>
       </section>
       <br>
       <br>
       <hr>
 
       <!-- Ikoner -->
+      <h2>IKONER</h2>
       <section id="ikoner">
-        <h2>IKONER</h2>
         <img class="icon-img" src="images/icon_ionic-ios-pin-1.png" alt="maps logo">
         <img class="icon-img" src="images/icon_ionic-ios-trash.png" alt="maps logo">
         <img class="icon-img" src="images/icon_ionic-md-home.png" alt="maps logo">
         <img class="icon-img" src="images/icon_ionic-md-person.png" alt="maps logo">
+        </section>
         <code>
           &lt;img class="icon-img" src="images/icon_ionic-ios-pin-1.png" alt="maps logo"&gt;
         </code>
-      </section>
-
+        <br><br><br>
+        <div>
+          <p>
+            hus og person bruges til menubar som henviser til hjem og profilebr
+            <br> 
+          </p>
+        </div>
       <br>
       <br>
       <hr>
@@ -184,16 +263,19 @@
             &lt;li&gt;
 
               &lt;a href="#hjem"&gt; &lt;img class="nav-img" src="images/icon_ionic-md-home.png" alt="home"&gt; &lt;/a&gt;
-              <
             &lt;/li&gt;
             &lt;li&gt;
             <br>
             <br>
             <br>
-            
+
               &lt;a href="#profil"&gt; &lt;img class="nav-img" src="images/icon_ionic-md-person.png" alt="profile"&gt;&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         </code>
+        <br><br><br>
+        <p>
+           Menubar placeres i bunden af applikationen
+        </p>
       </section>
       <br>
       <br>
