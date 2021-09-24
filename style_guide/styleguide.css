@@ -246,6 +246,12 @@ appearance: none;
   padding: 10px;
 }
 
+.grafiktekst{
+  display: block;
+  
+
+}
+
 /* NAVIGATION */
 
 .nav-box-flex {
