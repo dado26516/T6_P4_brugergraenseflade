@@ -125,6 +125,33 @@ button:hover,
     background-color: var(--primary-color);
 }
 
+.round-button--back-button {
+    background-image: url(../img/icons/back-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.round-button--back-button:hover {
+    background-image: url(../img/icons/back-button-white.svg);
+    background-color: var(--primary-color);
+}
+
+.round-button--search-button {
+    background-image: url(../img/icons/search-button.svg);
+    background-repeat: no-repeat;
+    background-position: 8px 8px;
+}
+
+.round-button--search-button:hover {
+    background-image: url(../img/icons/search-button-white.svg);
+    background-color: var(--primary-color);
+}
+
+.round-button--search-button-open {
+    width: 100%;
+}
+
+
 .round-button--full-big {
     width: 60px;
     height: 60px;
@@ -188,6 +215,11 @@ header,
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header--secound-setup {
+    height: 100px;
+    display: flex;
 }
 
 .header--minustop28 {
@@ -500,6 +532,18 @@ footer nav a {
     right: 0px;
     left: auto;
   }
+
+/*==========================================================*/
+/**************************ETAGER****************************/
+/*==========================================================*/
+
+.etager {
+    background-color: #C6CDD3;
+}
+
+.etager .round-button--back-button {
+    margin-right: 15px;
+}
 
 /*==========================================================*/
 /*************************PROFILE****************************/
