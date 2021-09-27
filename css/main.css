@@ -147,10 +147,19 @@ button:hover,
     background-color: var(--primary-color);
 }
 
-.round-button--search-button-open {
-    width: 100%;
+.round-button--search-button input {
+    display: none;
 }
 
+.round-button--search-button-open {
+    width: calc(100% - 55px);
+    overflow: hidden;
+}
+
+.round-button--search-button-open input {
+    display: flex;
+    border: none;
+}
 
 .round-button--full-big {
     width: 60px;
@@ -541,8 +550,30 @@ footer nav a {
     background-color: #C6CDD3;
 }
 
+.etager main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 .etager .round-button--back-button {
     margin-right: 15px;
+}
+
+.etager #etager-list {
+    width: 220px;
+    height: 260px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.etager #etager-list a {
+    margin-top: -40px;
 }
 
 /*==========================================================*/

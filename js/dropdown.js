@@ -1,3 +1,4 @@
+//Dropdown
 const mainInput = document.getElementById('main-input');
 const mainSearch = document.getElementById('main-search');
 const mainDropdown = document.getElementById('main-dropdown');

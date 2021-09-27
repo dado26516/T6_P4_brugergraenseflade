@@ -35,32 +35,42 @@
     <!-- Alle css & js filerne, vil til sidst blive slået sammen. Dette er for at gøre det nemmere, så alle kan arbejde på css & js -->
     <!---------------------------------------------------------------------------------------------------------------------->
     
-    <link href="css/arton.css" rel="stylesheet" type="text/css">
-    <link href="css/danni.css" rel="stylesheet" type="text/css">
-    <link href="css/hedinn.css" rel="stylesheet" type="text/css">
-    <link href="css/simon.css" rel="stylesheet" type="text/css">
-    <link href="css/tore.css" rel="stylesheet" type="text/css">
+    <link href="../css/arton.css" rel="stylesheet" type="text/css">
+    <link href="../css/danni.css" rel="stylesheet" type="text/css">
+    <link href="../css/hedinn.css" rel="stylesheet" type="text/css">
+    <link href="../css/simon.css" rel="stylesheet" type="text/css">
+    <link href="../css/tore.css" rel="stylesheet" type="text/css">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <script type="module" src="js/main.js" defer></script>
-    <script type="module" src="js/arton.js" defer></script>
-    <script type="module" src="js/danni.js" defer></script>
-    <script type="module" src="js/hedinn.js" defer></script>
-    <script type="module" src="js/simon.js" defer></script>
-    <script type="module" src="js/tore.js" defer></script>
+    <script type="module" src="../js/search-expand.js" defer></script>
 </head>
 <body class="etager">
     <div id="wrapper">
         <header class="header header--secound-setup">
             <a class="round-button round-button--back-button" href="/"></a>
-            <a class="round-button round-button--search-button" href="/etager/"></a>
+            <div id="search-secoundary" class="round-button round-button--search-button">
+                <input type="text" value="" placeholder="Søg..">
+            </div>
         </header>
         
         <main>
-            
+            <div id="etager-list">
+                <a href="../etager/1-etage/">
+                    <img src="../img/1.png" alt="">
+                </a>
+                <a href="../etager/1-etage/">
+                    <img src="../img/2.png" alt="">
+                </a>
+                <a href="../etager/1-etage/">
+                    <img src="../img/3.png" alt="">
+                </a>
+                <a href="../etager/1-etage/">
+                    <img src="../img/4.png" alt="">
+                </a>
+            </div>
         </main>
         
         <a href="" class="find-mig">
@@ -77,7 +87,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="profile" href="">
+                    <a class="profile" href="/login/">
                         <div class="profile__icon"></div>
                     </a>
                 </li>
