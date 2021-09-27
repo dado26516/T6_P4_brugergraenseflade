@@ -41,6 +41,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 
     <script type="module" src="../../js/search-expand.js" defer></script>
+    <script type="module" src="../../js/fablab-open.js" defer></script>
 </head>
 <body class="etager etage-1">
     <div id="wrapper">
@@ -52,11 +53,25 @@
         </header>
         
         <main>
-            <div class="overlay-lokale-info">
+            <div id="overlay-lokale" class="overlay-lokale-info">
                 <div class="box">
                     <div id="close"></div>
+                    <div class="box__text">
+                        <h1>Fablab<span id="bookmark-icon" class="bookmark-icon"></span></h1>
+                        <p>Fablab er et kreativt og teknologisk uddannelseslaboratorium og prototypeværksted, hvor du har mulighed for at eksperimentere, skabe, lære, vidensdele og kan få hjælp til at omsætte dine idéer til prototyper og produkter.</p>
+                    </div>
+                    <div class="box__control">
+                        <div class="control__tider">
+                            <h2>Tider</h2>
+                            <p>Mandag - fredag</p>
+                            <p>08:00 - 16:00</p>
+                        </div>
+                        <a class="control__find button button--small button--small--white" href="">Find</a>
+                    </div>
+                    <div class="spids"></div>
                 </div>
             </div>
+            <div id="clickable-area" class="clickable-area"></div>
             <img src="../../img/kort.png" alt="">
         </main>
         

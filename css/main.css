@@ -109,6 +109,15 @@ button:hover,
     background-image: url(../img/icons/back-button-white.svg);
 }
 
+.button--small--white {
+    color: var(--primary-color);
+    background-color: var(--secoundary-text-color);
+}
+
+.button--small--white:hover {
+    color: #05454e;
+    background-color: #ABD5DA;
+}
 
 .round-button {
     width: 40px;
@@ -577,9 +586,9 @@ footer nav a {
     margin-top: -40px;
 }
 
-.etager.etage-1 main {
+/* .etager.etage-1 main {
 
-}
+} */
 
 .etager.etage-1 header {
     background: linear-gradient(
@@ -590,11 +599,25 @@ footer nav a {
     left: 0px;
 }
 
+.etager.etage-1 img {
+    margin-top: 720px;
+    margin-left: 170px;
+}
+
+.clickable-area {
+    width: 182px;
+    height: 94px;
+    position: absolute;
+    margin-top: 506px;
+    margin-left: -252px;
+    cursor: pointer;
+}
+
 .overlay-lokale-info {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.85);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -603,10 +626,77 @@ footer nav a {
     z-index: 999;
 }
 
+.overlay-lokale-info #close {
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/icons/exit.svg);
+    cursor: pointer;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+}
+
 .overlay-lokale-info .box {
     width: 258px;
     height: 368px;
     background-color: #05454E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+    position: relative;
+}
+
+.overlay-lokale-info .box h1 {
+    color: var(--secoundary-text-color);
+    margin-bottom: 10px;
+}
+
+.overlay-lokale-info .box .box__text p {
+    color: var(--tertiary-text-color);
+    margin-bottom: 10px;
+}
+
+.overlay-lokale-info .box .box__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.overlay-lokale-info .box .control__tider {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay-lokale-info .box .control__tider p {
+    color: var(--tertiary-text-color);
+}
+
+.overlay-lokale-info .box .control__tider h2 {
+    color: var(--secoundary-text-color);
+    margin-bottom: 5px;
+}
+
+.overlay-lokale-info .box .spids {
+    width: 125px;
+    height: 65px;
+    background-image: url(../img/spids.svg);
+    position: absolute;
+    top: 368px;
+    left: 0px;
+}
+
+.bookmark-icon {
+    width: 15px;
+    height: 21px;
+    display: inline-block;
+    background-image: url(../img/icons/icon-bookmark.svg);
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.bookmark-icon--selected {
+    background-image: url(../img/icons/icon-bookmark-white.svg);
 }
 
 /*==========================================================*/

@@ -10,12 +10,12 @@ document.getElementById('page-input').addEventListener('click', function(e) {
 });
 
 mainInput.addEventListener('input', function(e) {
-    
     let mainInputValue = mainInput.value;
     
+    console.log(mainInputValue);
+
     let test = mainInputValue.startsWith("F");
     console.log(test);
-    
     
     if(mainInputValue.startsWith("F")) {
         mainSearch.classList.add('dropdown__module--dropped');
