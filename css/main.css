@@ -556,6 +556,7 @@ footer nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -574,6 +575,38 @@ footer nav a {
 
 .etager #etager-list a {
     margin-top: -40px;
+}
+
+.etager.etage-1 main {
+
+}
+
+.etager.etage-1 header {
+    background: linear-gradient(
+180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+    padding: 28px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.overlay-lokale-info {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+
+.overlay-lokale-info .box {
+    width: 258px;
+    height: 368px;
+    background-color: #05454E;
 }
 
 /*==========================================================*/
