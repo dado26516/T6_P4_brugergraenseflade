@@ -8,7 +8,7 @@ searchListen.addEventListener('click', function(e) {
 searchListen.addEventListener('keydown', function(e) {
     if (13 == e.keyCode) {
         searchListen.classList.remove('round-button--search-button-open');
-        window.location.href = "/etager/1-etage";
+        window.location.href = "/team6/etager/1-etage/";
     }
 });
 

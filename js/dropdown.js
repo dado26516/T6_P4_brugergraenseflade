@@ -10,14 +10,14 @@ document.getElementById('page-input').addEventListener('click', function(e) {
 });
 
 mainInput.addEventListener('input', function(e) {
-    let mainInputValue = mainInput.value;
-    
+    let mainInputValue = mainInput.value.toLowerCase();
+
     console.log(mainInputValue);
 
     let test = mainInputValue.startsWith("F");
     console.log(test);
     
-    if(mainInputValue.startsWith("F")) {
+    if(mainInputValue.startsWith("f")) {
         mainSearch.classList.add('dropdown__module--dropped');
         mainDropdown.style.display = "flex";   
     } else {
